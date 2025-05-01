@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -6,10 +5,8 @@ import SectionHeader from "../components/SectionHeader";
 import ImageWithOverlay from "../components/ImageWithOverlay";
 import ParallaxSection from "../components/ParallaxSection";
 import { Button } from "../components/ui/button";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
@@ -42,10 +39,7 @@ const Index = () => {
       {/* Services Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <SectionHeader 
-            title="Our Divine Services" 
-            subtitle="Traditional craftsmanship with spiritual significance"
-          />
+          <SectionHeader title="Our Divine Services" subtitle="Traditional craftsmanship with spiritual significance" />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -104,36 +98,12 @@ const Index = () => {
       {/* Featured Works */}
       <section className="bg-accent/20 py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <SectionHeader 
-            title="Featured Works" 
-            subtitle="Discover our divine sculptures and architectural creations"
-          />
+          <SectionHeader title="Featured Works" subtitle="Discover our divine sculptures and architectural creations" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ImageWithOverlay
-              src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb"
-              alt="Hindu God sculpture"
-              title="Lord Ganesha"
-              description="Intricately carved statue of Lord Ganesha, the remover of obstacles."
-              linkTo="/works"
-              className="aspect-square"
-            />
-            <ImageWithOverlay
-              src="https://images.unsplash.com/photo-1473177104440-ffee2f376098"
-              alt="Stone temple architecture"
-              title="Temple Architecture"
-              description="Traditional stone temple entrance with detailed carvings."
-              linkTo="/works"
-              className="aspect-square"
-            />
-            <ImageWithOverlay
-              src="https://images.unsplash.com/photo-1527576539890-dfa815648363"
-              alt="Buddha statue"
-              title="Meditating Buddha"
-              description="Peaceful Buddha sculpture radiating serenity and mindfulness."
-              linkTo="/works"
-              className="aspect-square"
-            />
+            <ImageWithOverlay src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb" alt="Hindu God sculpture" title="Lord Ganesha" description="Intricately carved statue of Lord Ganesha, the remover of obstacles." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="https://images.unsplash.com/photo-1473177104440-ffee2f376098" alt="Stone temple architecture" title="Temple Architecture" description="Traditional stone temple entrance with detailed carvings." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="https://images.unsplash.com/photo-1527576539890-dfa815648363" alt="Buddha statue" title="Meditating Buddha" description="Peaceful Buddha sculpture radiating serenity and mindfulness." linkTo="/works" className="aspect-square" />
           </div>
           
           <div className="text-center mt-12">
@@ -147,12 +117,7 @@ const Index = () => {
       </section>
       
       {/* Testimonial Section */}
-      <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-        overlayOpacity={0.7}
-        minHeight="500px"
-        className="py-16 md:py-24"
-      >
+      <ParallaxSection backgroundImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625" overlayOpacity={0.7} minHeight="500px" className="py-16 md:py-24">
         <div className="container mx-auto px-4 flex flex-col items-center justify-center h-full">
           <div className="max-w-3xl mx-auto text-center text-divine-cream">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-8">What Our Clients Say</h2>
@@ -169,7 +134,7 @@ const Index = () => {
             </div>
             
             <Link to="/testimonials">
-              <Button variant="outline" className="border-divine-cream text-divine-cream hover:bg-divine-cream/10 mt-4">
+              <Button variant="outline" className="border-divine-cream text-divine-cream mt-4 bg-zinc-950 hover:bg-zinc-800">
                 Read More Testimonials
               </Button>
             </Link>
@@ -209,8 +174,6 @@ const Index = () => {
       </section>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
