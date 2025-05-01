@@ -13,7 +13,7 @@ const Services = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png"
+        backgroundImage="public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png"
         overlayOpacity={0.6}
         minHeight="400px"
         className="mt-16"
@@ -66,7 +66,7 @@ const Services = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" 
+                src="public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png" 
                 alt="Hindu deity sculpture" 
                 className="w-full h-full object-cover"
               />
@@ -81,7 +81,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-lg order-2 lg:order-1">
               <img 
-                src="public/lovable-uploads/1c081dc7-6577-4550-a007-f84afb9d9962.png" 
+                src="public/lovable-uploads/1808cfbc-178b-4cca-9ec7-8bef88cb69dd.png" 
                 alt="Stone temple architecture" 
                 className="w-full h-full object-cover"
               />
@@ -157,7 +157,7 @@ const Services = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="public/lovable-uploads/56b5158f-7ff1-4361-930f-7b417cf8b303.png" 
+                src="public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png" 
                 alt="Buddha sculpture" 
                 className="w-full h-full object-cover"
               />

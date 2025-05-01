@@ -88,7 +88,7 @@ const Booking = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb"
+        backgroundImage="public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png"
         overlayOpacity={0.7}
         minHeight="400px"
         className="mt-16"

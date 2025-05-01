@@ -12,7 +12,7 @@ const Contact = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
+        backgroundImage="public/lovable-uploads/a40e6766-b363-4d69-901c-f152d75e8a65.png"
         overlayOpacity={0.6}
         minHeight="400px"
         className="mt-16"

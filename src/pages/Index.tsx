@@ -13,7 +13,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-divine-beige/20">
-        <div className="absolute inset-0 bg-[url('public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png')] bg-cover bg-center bg-no-repeat opacity-20" />
+        <div className="absolute inset-0 bg-[url('public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png')] bg-cover bg-center bg-no-repeat opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/90" />
         <div className="container mx-auto px-4 z-10 text-center py-20 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair mb-6">
@@ -103,9 +103,9 @@ const Index = () => {
           <SectionHeader title="Featured Works" subtitle="Discover our divine sculptures and architectural creations" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ImageWithOverlay src="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" alt="Hindu God sculpture" title="Divine Deity" description="Intricately carved and adorned deity, ready for worship." linkTo="/works" className="aspect-square" />
-            <ImageWithOverlay src="public/lovable-uploads/1c081dc7-6577-4550-a007-f84afb9d9962.png" alt="Stone temple architecture" title="Temple Architecture" description="Traditional stone temple structure with detailed carvings." linkTo="/works" className="aspect-square" />
-            <ImageWithOverlay src="public/lovable-uploads/56b5158f-7ff1-4361-930f-7b417cf8b303.png" alt="Buddha statue" title="Meditating Buddha" description="Peaceful Buddha sculpture radiating serenity and mindfulness." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png" alt="Hindu God sculpture" title="Divine Deity" description="Intricately carved and adorned deity, ready for worship." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/1808cfbc-178b-4cca-9ec7-8bef88cb69dd.png" alt="Stone temple architecture" title="Temple Architecture" description="Traditional stone temple structure with detailed carvings." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png" alt="Buddha statue" title="Meditating Buddha" description="Peaceful Buddha sculpture radiating serenity and mindfulness." linkTo="/works" className="aspect-square" />
           </div>
           
           <div className="text-center mt-12">
@@ -119,7 +119,7 @@ const Index = () => {
       </section>
       
       {/* Testimonial Section */}
-      <ParallaxSection backgroundImage="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" overlayOpacity={0.7} minHeight="500px" className="py-16 md:py-24">
+      <ParallaxSection backgroundImage="public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png" overlayOpacity={0.7} minHeight="500px" className="py-16 md:py-24">
         <div className="container mx-auto px-4 flex flex-col items-center justify-center h-full">
           <div className="max-w-3xl mx-auto text-center text-divine-cream">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-8">What Our Clients Say</h2>

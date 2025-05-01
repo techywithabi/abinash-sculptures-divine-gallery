@@ -59,7 +59,7 @@ const Testimonials = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+        backgroundImage="public/lovable-uploads/8c53f04a-1e32-4a72-9267-97b36cf888d5.png"
         overlayOpacity={0.7}
         minHeight="400px"
         className="mt-16"

@@ -8,49 +8,49 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import { cn } from "../lib/utils";
 
-// Sample portfolio data - this would typically come from a CMS or API
+// Sample portfolio data - updated with real images
 const portfolioItems = [
   {
     id: 1,
     title: "Lord Ganesha",
     category: "Hindu Gods",
-    image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb",
+    image: "public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png",
     description: "Intricately carved Ganesha statue with traditional iconography and posture."
   },
   {
     id: 2,
-    title: "Temple Entrance",
+    title: "Temple Structure",
     category: "Stone Temples",
-    image: "https://images.unsplash.com/photo-1473177104440-ffee2f376098",
-    description: "Ornate temple entrance with detailed carvings of celestial beings and sacred motifs."
+    image: "public/lovable-uploads/1808cfbc-178b-4cca-9ec7-8bef88cb69dd.png",
+    description: "Ornate temple entrance with detailed carvings following sacred geometry principles."
   },
   {
     id: 3,
     title: "Meditating Buddha",
     category: "Buddhas",
-    image: "https://images.unsplash.com/photo-1527576539890-dfa815648363",
-    description: "Serene Buddha statue in Dhyana Mudra (meditation pose), radiating peace and tranquility."
+    image: "public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png",
+    description: "Serene Buddha statue in meditation pose, radiating peace and tranquility."
   },
   {
     id: 4,
-    title: "Goddess Lakshmi",
+    title: "Goddess Mariamman",
     category: "Hindu Gods",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
-    description: "Beautiful sculpture of Goddess Lakshmi, bestower of wealth and prosperity."
+    image: "public/lovable-uploads/8c53f04a-1e32-4a72-9267-97b36cf888d5.png",
+    description: "Beautiful black stone sculpture of Goddess adorned with traditional attire."
   },
   {
     id: 5,
-    title: "Temple Column",
-    category: "Stone Temples",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-    description: "Elaborately carved temple column featuring traditional patterns and divine figures."
+    title: "Standing Buddha",
+    category: "Buddhas",
+    image: "public/lovable-uploads/a40e6766-b363-4d69-901c-f152d75e8a65.png",
+    description: "Elegant standing Buddha sculpture with Abhaya Mudra, symbolizing protection and fearlessness."
   },
   {
     id: 6,
-    title: "Standing Buddha",
-    category: "Buddhas",
-    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-    description: "Elegant standing Buddha sculpture with Abhaya Mudra, symbolizing protection and fearlessness."
+    title: "Lord Shiva and Parvati",
+    category: "Hindu Gods",
+    image: "public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png",
+    description: "Divine couple Shiva and Parvati sculpture, symbolizing cosmic balance and eternal love."
   }
 ];
 
@@ -76,7 +76,7 @@ const Works = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
+        backgroundImage="public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png"
         overlayOpacity={0.7}
         minHeight="400px"
         className="mt-16"
@@ -133,7 +133,7 @@ const Works = () => {
       
       {/* CTA Section */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+        backgroundImage="public/lovable-uploads/1808cfbc-178b-4cca-9ec7-8bef88cb69dd.png"
         overlayOpacity={0.7}
         minHeight="400px"
       >

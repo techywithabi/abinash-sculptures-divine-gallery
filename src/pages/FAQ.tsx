@@ -93,7 +93,7 @@ const FAQ = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1473177104440-ffee2f376098"
+        backgroundImage="public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png"
         overlayOpacity={0.6}
         minHeight="400px"
         className="mt-16"

@@ -13,7 +13,7 @@ const About = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+        backgroundImage="public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png"
         overlayOpacity={0.6}
         minHeight="400px"
         className="mt-16"
