@@ -13,7 +13,7 @@ const Services = () => {
       
       {/* Header */}
       <ParallaxSection 
-        backgroundImage="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb"
+        backgroundImage="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png"
         overlayOpacity={0.6}
         minHeight="400px"
         className="mt-16"
@@ -66,7 +66,7 @@ const Services = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb" 
+                src="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" 
                 alt="Hindu deity sculpture" 
                 className="w-full h-full object-cover"
               />
@@ -81,7 +81,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-lg order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1473177104440-ffee2f376098" 
+                src="public/lovable-uploads/1c081dc7-6577-4550-a007-f84afb9d9962.png" 
                 alt="Stone temple architecture" 
                 className="w-full h-full object-cover"
               />
@@ -157,7 +157,7 @@ const Services = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1527576539890-dfa815648363" 
+                src="public/lovable-uploads/56b5158f-7ff1-4361-930f-7b417cf8b303.png" 
                 alt="Buddha sculpture" 
                 className="w-full h-full object-cover"
               />

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -5,13 +6,14 @@ import SectionHeader from "../components/SectionHeader";
 import ImageWithOverlay from "../components/ImageWithOverlay";
 import ParallaxSection from "../components/ParallaxSection";
 import { Button } from "../components/ui/button";
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-divine-beige/20">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518005020951-eccb494ad742')] bg-cover bg-center bg-no-repeat opacity-20" />
+        <div className="absolute inset-0 bg-[url('public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png')] bg-cover bg-center bg-no-repeat opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/90" />
         <div className="container mx-auto px-4 z-10 text-center py-20 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair mb-6">
@@ -101,9 +103,9 @@ const Index = () => {
           <SectionHeader title="Featured Works" subtitle="Discover our divine sculptures and architectural creations" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ImageWithOverlay src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb" alt="Hindu God sculpture" title="Lord Ganesha" description="Intricately carved statue of Lord Ganesha, the remover of obstacles." linkTo="/works" className="aspect-square" />
-            <ImageWithOverlay src="https://images.unsplash.com/photo-1473177104440-ffee2f376098" alt="Stone temple architecture" title="Temple Architecture" description="Traditional stone temple entrance with detailed carvings." linkTo="/works" className="aspect-square" />
-            <ImageWithOverlay src="https://images.unsplash.com/photo-1527576539890-dfa815648363" alt="Buddha statue" title="Meditating Buddha" description="Peaceful Buddha sculpture radiating serenity and mindfulness." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" alt="Hindu God sculpture" title="Divine Deity" description="Intricately carved and adorned deity, ready for worship." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/1c081dc7-6577-4550-a007-f84afb9d9962.png" alt="Stone temple architecture" title="Temple Architecture" description="Traditional stone temple structure with detailed carvings." linkTo="/works" className="aspect-square" />
+            <ImageWithOverlay src="public/lovable-uploads/56b5158f-7ff1-4361-930f-7b417cf8b303.png" alt="Buddha statue" title="Meditating Buddha" description="Peaceful Buddha sculpture radiating serenity and mindfulness." linkTo="/works" className="aspect-square" />
           </div>
           
           <div className="text-center mt-12">
@@ -117,7 +119,7 @@ const Index = () => {
       </section>
       
       {/* Testimonial Section */}
-      <ParallaxSection backgroundImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625" overlayOpacity={0.7} minHeight="500px" className="py-16 md:py-24">
+      <ParallaxSection backgroundImage="public/lovable-uploads/c5824a61-ae59-4bc9-8a13-4f04607e14b8.png" overlayOpacity={0.7} minHeight="500px" className="py-16 md:py-24">
         <div className="container mx-auto px-4 flex flex-col items-center justify-center h-full">
           <div className="max-w-3xl mx-auto text-center text-divine-cream">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-8">What Our Clients Say</h2>
@@ -176,4 +178,5 @@ const Index = () => {
       <Footer />
     </div>;
 };
+
 export default Index;
