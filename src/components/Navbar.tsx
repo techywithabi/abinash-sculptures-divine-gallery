@@ -1,8 +1,9 @@
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { cn } from "../lib/utils";
+import { X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -18,6 +19,25 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  // Control body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,6 +123,14 @@ export default function Navbar() {
         )}
       >
         <div className="flex flex-col h-full justify-center items-center gap-6 p-4">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-4 right-4 p-2 rounded-md focus:outline-none"
+            aria-label="Close menu"
+          >
+            <X size={24} className="text-foreground" />
+          </button>
+          
           {navLinks.map((link) => (
             <Link
               key={link.name}
