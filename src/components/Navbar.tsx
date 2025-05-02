@@ -121,6 +121,15 @@ export default function Navbar() {
             ? "translate-x-0 opacity-100" 
             : "translate-x-full opacity-0 pointer-events-none"
         )}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          height: "100vh",
+          width: "100vw"
+        }}
       >
         <div className="flex flex-col h-full justify-center items-center gap-6 p-4">
           <button

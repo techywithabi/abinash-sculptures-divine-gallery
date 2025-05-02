@@ -61,7 +61,7 @@ const About = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742" 
+                src="public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png" 
                 alt="Abinash Sculptures workshop" 
                 className="w-full h-full object-cover"
               />
