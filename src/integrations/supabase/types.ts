@@ -9,7 +9,81 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      bookings: {
+        Row: {
+          additional_info: string | null
+          category: string
+          country: string
+          created_at: string
+          custom_type: string | null
+          email: string
+          id: string
+          installation_needs: string | null
+          name: string
+          phone: string
+          size: string | null
+          specific_requirements: string | null
+        }
+        Insert: {
+          additional_info?: string | null
+          category: string
+          country: string
+          created_at?: string
+          custom_type?: string | null
+          email: string
+          id?: string
+          installation_needs?: string | null
+          name: string
+          phone: string
+          size?: string | null
+          specific_requirements?: string | null
+        }
+        Update: {
+          additional_info?: string | null
+          category?: string
+          country?: string
+          created_at?: string
+          custom_type?: string | null
+          email?: string
+          id?: string
+          installation_needs?: string | null
+          name?: string
+          phone?: string
+          size?: string | null
+          specific_requirements?: string | null
+        }
+        Relationships: []
+      }
+      contacts: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string | null
+          subject: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone?: string | null
+          subject: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string | null
+          subject?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
