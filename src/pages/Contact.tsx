@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -45,7 +44,13 @@ const Contact = () => {
     try {
       const { error } = await supabase
         .from('contacts')
-        .insert([values]);
+        .insert({
+          name: values.name,
+          email: values.email,
+          phone: values.phone || null,
+          subject: values.subject,
+          message: values.message
+        });
       
       if (error) throw error;
       
@@ -262,7 +267,6 @@ const Contact = () => {
           />
           
           <div className="mt-8 h-96 bg-muted rounded-lg overflow-hidden">
-            {/* This would be where you embed a Google Map - for now, we'll use a placeholder */}
             <div className="h-full w-full bg-accent flex items-center justify-center">
               <p className="text-muted-foreground">
                 Map of Mamallapuram, Tamil Nadu, India - An interactive map would be embedded here in production.
