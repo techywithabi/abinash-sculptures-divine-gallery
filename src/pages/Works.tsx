@@ -8,37 +8,31 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import { cn } from "../lib/utils";
 
-// Sample portfolio data - updated with real images
+// Portfolio items with the new images and no titles
 const portfolioItems = [
   {
     id: 1,
-    title: "Lord Ganesha",
-    image: "public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png",
+    image: "public/lovable-uploads/0457c075-c729-42a2-836b-bbf3df54d2c9.png",
   },
   {
     id: 2,
-    title: "Temple Structure",
-    image: "public/lovable-uploads/1808cfbc-178b-4cca-9ec7-8bef88cb69dd.png",
+    image: "public/lovable-uploads/b2ebf3a9-2000-46ff-b11a-43e28b87b75a.png",
   },
   {
     id: 3,
-    title: "Meditating Buddha",
-    image: "public/lovable-uploads/86cb314e-a1a7-49fc-a513-e2fdd3d41bf8.png",
+    image: "public/lovable-uploads/6d09b764-aa75-44ec-96fa-db1eb2263f23.png",
   },
   {
     id: 4,
-    title: "Goddess Mariamman",
-    image: "public/lovable-uploads/8c53f04a-1e32-4a72-9267-97b36cf888d5.png",
+    image: "public/lovable-uploads/d38e1f03-7cfe-44d6-b937-ec2e904f0ba8.png",
   },
   {
     id: 5,
-    title: "Standing Buddha",
-    image: "public/lovable-uploads/a40e6766-b363-4d69-901c-f152d75e8a65.png",
+    image: "public/lovable-uploads/2ac6deb5-31c6-4148-8510-c4bf6c6acd02.png",
   },
   {
     id: 6,
-    title: "Lord Shiva and Parvati",
-    image: "public/lovable-uploads/43539b7e-0525-477c-b6d8-c15967a962f7.png",
+    image: "public/lovable-uploads/7060ef89-5cc5-4a1a-a301-1683d3446f7a.png",
   }
 ];
 
@@ -118,7 +112,7 @@ const Works = () => {
   );
 };
 
-// Portfolio Item Component with Parallax Effect
+// Portfolio Item Component with Parallax Effect - removed title display
 const PortfolioItem = ({ item }: { item: typeof portfolioItems[0] }) => {
   const [isVisible, setIsVisible] = useState(false);
   const itemRef = useRef<HTMLDivElement>(null);
@@ -159,12 +153,9 @@ const PortfolioItem = ({ item }: { item: typeof portfolioItems[0] }) => {
     >
       <img 
         src={item.image} 
-        alt={item.title} 
+        alt="Divine sculpture" 
         className="w-full h-auto object-cover" 
       />
-      <div className="p-4">
-        <h3 className="text-xl font-bold font-playfair text-center">{item.title}</h3>
-      </div>
     </div>
   );
 };
